@@ -91,7 +91,7 @@ function Contact() {
     };
   
     return (
-      <section>
+      <section className="section">
         <h2>Contact Me</h2>
         <form onSubmit={handleSubmit}>
           <div>

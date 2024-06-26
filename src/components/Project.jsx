@@ -9,7 +9,7 @@ function Project({ title, imageUrl, liveUrl, repoUrl }) {
       <img src={imageUrl} alt={`${title} screenshot`} className="project-image" />
       <h3>{title}</h3>
       <div className="project-links">
-        <a href={liveUrl} target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href={liveUrl} target="_blank" rel="noopener noreferrer">Deployed Application</a>
         <a href={repoUrl} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
       </div>
     </div>
