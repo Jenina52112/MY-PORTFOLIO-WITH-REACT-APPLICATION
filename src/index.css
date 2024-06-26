@@ -1,9 +1,14 @@
-
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 body {
     font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100%
   }
   
   header {
@@ -13,7 +18,7 @@ body {
     padding: 1rem;
     background-color: #47a9d6;
     color: #4d0404;
-    font-size: 40px;
+    font-size: 35px;
   }
   
   nav ul {
@@ -41,13 +46,18 @@ body {
   
   main {
     padding: 2rem;
+    flex: 1;
   }
-  
+
   footer {
     text-align: center;
     padding: 1rem;
     background-color: #47a9d6;
     color: white;
+  }
+
+  footer a{
+    margin-right: 30px;
   }
   
   .project {
@@ -58,10 +68,6 @@ body {
     display: block;
     margin: 0.5rem 0;
     color: #61dafb;
-  }
-  
-  form div {
-    margin-bottom: 1rem;
   }
   
   form p {

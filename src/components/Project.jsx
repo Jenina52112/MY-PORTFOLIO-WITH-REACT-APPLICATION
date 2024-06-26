@@ -1,15 +1,26 @@
 // src/components/Project.jsx
 import React from 'react';
+import PropTypes from 'prop-types';
+import './Project.css';
 
-function Project({ project }) {
+function Project({ title, imageUrl, liveUrl, repoUrl }) {
   return (
     <div className="project">
-      <h3>{project.title}</h3>
-      <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">Deployed Application</a>
-      <a href={project.repoLink} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+      <img src={imageUrl} alt={`${title} screenshot`} className="project-image" />
+      <h3>{title}</h3>
+      <div className="project-links">
+        <a href={liveUrl} target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href={repoUrl} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+      </div>
     </div>
   );
 }
 
-export default Project;
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  liveUrl: PropTypes.string.isRequired,
+  repoUrl: PropTypes.string.isRequired,
+};
 
+export default Project;

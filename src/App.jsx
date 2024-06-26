@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div id="root">
       <Header currentSection={currentSection} handleSectionChange={setCurrentSection} />
       <main>
         {renderSection()}

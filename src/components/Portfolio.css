@@ -1,0 +1,18 @@
+/* src/components/Portfolio.css */
+
+.portfolio {
+    padding: 2rem;
+  }
+  
+  .portfolio h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
