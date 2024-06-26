@@ -1,18 +1,14 @@
+// src/components/Footer.jsx
 import React from 'react';
 
-const Footer = () => {
-    return (
-        <footer className="footer">
-            <div className="container">
-                <p>&copy; 2024 Your Company. All rights reserved.</p>
-                <ul className="footer-links">
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </footer>
-    );
-};
+function Footer() {
+  return (
+    <footer>
+      <a href="https://github.com/developer" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://linkedin.com/in/developer" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://stackoverflow.com/users/developer" target="_blank" rel="noopener noreferrer">Stack Overflow</a>
+    </footer>
+  );
+}
 
 export default Footer;

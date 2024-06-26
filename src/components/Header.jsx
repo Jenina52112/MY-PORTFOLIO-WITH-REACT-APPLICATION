@@ -1,13 +1,13 @@
 import React from 'react';
 import Navigation from './Navigation';
 
-function Header(){
-    return(
-        <header>
-            <h1>Jenina dela Cruz</h1>
-            <nav></nav>
-        </header>
+function Header({ currentSection, handleSectionChange }) {
+    return (
+      <header>
+        <h1>Jenina dela Cruz Pisigan</h1>
+        <Navigation currentSection={currentSection} handleSectionChange={handleSectionChange} />
+      </header>
     );
-}
-
-export default Header;
+  }
+  
+  export default Header;
