@@ -1,0 +1,48 @@
+
+.resumeA {
+    font-size: 30px;
+    display: inline-block; /* Makes the anchor element behave like a block-level element */
+    padding: 20px 20px; /* Adds padding for a better look */
+    background-color: #007BFF; /* Initial background color */
+    color: white; /* Initial text color */
+    text-decoration: none; /* Removes the underline */
+    border-radius: 5px; /* Adds rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adds transition effect */
+  }
+  
+  .resumeA:hover {
+    background-color: #0056b3; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+  }
+h3{
+    font-size: 40px;
+}
+
+
+.resumeDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    text-align: center; /* Centers the text inside the elements */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resumeUl{
+    font-size: 30px;
+    list-style-type: none;
+}
+.resumeButton{
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

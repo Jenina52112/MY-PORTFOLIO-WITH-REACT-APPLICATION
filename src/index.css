@@ -44,6 +44,15 @@ body {
 
   }
   
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 50px;
+  }
+  
+
   main {
     padding: 2rem;
     flex: 1;
@@ -57,18 +66,11 @@ body {
   }
 
   footer a{
+    font-size: 20px;
     margin-right: 30px;
   }
   
-  .project {
-    margin: 1rem 0;
-  }
   
-  .project a {
-    display: block;
-    margin: 0.5rem 0;
-    color: #61dafb;
-  }
   
   form p {
     color: red;
