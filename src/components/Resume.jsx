@@ -2,6 +2,12 @@
 import React from 'react';
 import './Resume.css'
 
+const items = ['HTML', 'CSS', 'Javascript', 'MySql', 'MongoDb', 'Express', 'React',
+  'Node'
+];
+const listItems = items.map(item => <li>{item}</li>);
+
+
 function Resume() {
   return (
     <section>
@@ -9,14 +15,7 @@ function Resume() {
       <div className="resumeDiv">
         <h3>My Proficiencies</h3>
         <ul className="resumeUl">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>MySql</li>
-          <li>MongoDb</li>
-          <li>Express</li>
-          <li>React</li>
-          <li>Node</li>
+          {listItems}
         </ul>
       <a className="resumeA" href="../../public/resume.pdf" download>Download Resume</a>
 
