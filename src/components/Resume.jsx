@@ -17,7 +17,7 @@ function Resume() {
         <ul className="resumeUl">
           {listItems}
         </ul>
-      <a className="resumeA" href="../../public/resume.pdf" download>Download Resume</a>
+      <a className="resumeA" href="../../resume.pdf" download>Download Resume</a>
 
       </div>
     </section>
