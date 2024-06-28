@@ -6,7 +6,7 @@ function About() {
     <section className="aboutSection">
       <h2>About Me</h2>
       <div className="contentWrapper">
-        <img src="../image.png" alt="Developer" className="aboutImage" />
+        <img src="../../image.png" alt="Developer" className="aboutImage" />
         <div className="textWrapper">
           <p>Hello! I am Jenina dela Cruz, a current student in UCB Bootcamp for full-stack Web Development.
             I love creating things and solving problems. That's what got me interested in coding. I am also looking 
