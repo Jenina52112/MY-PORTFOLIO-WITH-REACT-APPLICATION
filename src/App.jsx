@@ -1,5 +1,6 @@
 // src/components/App.jsx
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -9,31 +10,22 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
-  const [currentSection, setCurrentSection] = useState('About Me');
-
-  const renderSection = () => {
-    switch (currentSection) {
-      case 'About Me':
-        return <About />;
-      case 'Portfolio':
-        return <Portfolio />;
-      case 'Contact':
-        return <Contact />;
-      case 'Resume':
-        return <Resume />;
-      default:
-        return <About />;
-    }
-  };
-
   return (
-    <div id="root">
-      <Header currentSection={currentSection} handleSectionChange={setCurrentSection} />
-      <main>
-        {renderSection()}
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div id="main">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/about-me" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
