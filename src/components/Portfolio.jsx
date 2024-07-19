@@ -5,10 +5,10 @@ import './Portfolio.css';
 
 const projects = [
   {
-    title: 'CMS Style Blog Site',
-    imageUrl: '../../image copy.png',
-    liveUrl: 'https://cms-style-blog-site-18a70dcd692d.herokuapp.com',
-    repoUrl: 'https://github.com/Jenina52112/CMS-Style-Blog-Site-Challenge',
+    title: 'MERN Application',
+    imageUrl: '../../meowmarket.png',
+    liveUrl: 'https://group-fivemeowmarket-c7eee0758978.herokuapp.com/',
+    repoUrl: 'https://github.com/eepitsporsche/meow_market',
   },
   {
     title: 'Weather Dashboard App',
